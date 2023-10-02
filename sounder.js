@@ -142,11 +142,11 @@ function playSECallKey(callNum) {
         return;
     }
     console.log("Key" + num);
-    var num = callNum * 3;
+    var num = callNum;
     nowplaynumKey = num;
     soundArrayKey[num].connect(analyser);
     soundArrayKey[num].start(0);
-    if(callNum==1){
+    if(false){
     soundArrayKey[num].onended = function () {
         if (nowplaynumKey == null) return;
         if (onStandByMetal) return;
